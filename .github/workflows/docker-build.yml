@@ -9,7 +9,7 @@ permissions:
   pull-requests: write
 
 env:
-  IMAGE_NAME: ikuku1010/epl-poll-app
+  IMAGE_NAME: ikuku1010/epl-ec2poll-app
 
 jobs:
   build:
