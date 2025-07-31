@@ -22,7 +22,7 @@ jobs:
     - name: Generate version tag
       run: |
         COUNT=$(git rev-list --count HEAD)
-        VERSION="v0.1.$COUNT"
+        VERSION="v1.1.$COUNT"
         echo "VERSION=$VERSION" >> $GITHUB_ENV
         echo "$VERSION" > version.txt
         echo "Generated version: $VERSION"

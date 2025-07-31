@@ -12,6 +12,10 @@ votes = {
     "Liverpool": 0,
     "Manchester City": 0,
     "Manchester United": 0,
+    "Fulham": 0,
+    "Newcastle United": 0,
+    "Crystal Palace": 0,
+    "West Ham United": 0,
     "Tottenham": 0
 }
 
