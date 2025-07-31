@@ -1,0 +1,32 @@
+namespace: ikuku-app
+
+app:
+  name: ikuku-app
+  replicas: 2
+  containerPort: 8000
+
+image:
+  repository: ikuku1010/epl-ec2poll-app
+  tag: v1.2.0
+  pullPolicy: IfNotPresent
+
+service:
+  name: ikuku-app-service
+  type: NodePort
+  port: 80
+  targetPort: 8000
+  
+
+ingress:
+  name: ikuku-app-ingress
+  host: ec2-3-83-64-73.compute-1.amazonaws.com
+  path: /
+  className: nginx
+
+resources:
+  requests:
+    cpu: "100m"
+    memory: "128Mi"
+  limits:
+    cpu: "500m"
+    memory: "512Mi"
